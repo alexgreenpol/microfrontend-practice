@@ -1,0 +1,11 @@
+{
+  "name": "microfrontends-demo",
+  "private": true,
+  "scripts": {
+    "start": "concurrently -k \"pnpm --filter remote-vue start-remote\" \"pnpm --filter remote-react start-remote\" \"pnpm --filter host dev:delayed\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "wait-on": "^7.0.1"
+  }
+}
